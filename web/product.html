@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="initial-scale = 1.0, maximum-scale = 1.0, user-scalable = yes, width = device-width"
+    />
+    <title>DH tienda</title>
+    <link rel="icon" href="/source/img/favicon-32x32.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+  </head>
+
+  <body class="border">
+    <!-- índice  -->
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./source/img/Logo1.jpg" height="80px" alt="logo"/>
+        </a>
+      </div>
+      <h1>DH Store</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./product.html">Productos</a></li>
+          <li><a href="./form_contact_us.html">Contacto</a></li>
+          <li><a href="./about_us.html">Sobre nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="border">
+      <hr />
+      <!-- catalogo -->
+      <section class="catalogo border">
+        <h1>Catalogo</h1>
+
+        <div class="container-categories">
+          <input
+            type="checkbox"
+            name="categories-1"
+            id="categories-1"
+            value="male"
+          />
+          <label for="categories-1">Hombre</label>
+
+          <input
+            type="checkbox"
+            name="categories-2"
+            id="categories-2"
+            value="female"
+          />
+          <label for="categories-2">Mujer</label>
+
+          <input
+            type="checkbox"
+            name="categories-3"
+            id="categories-3"
+            value="children"
+          />
+          <label for="categories-3">Niño</label>
+        </div>
+
+        <form action="#">
+          <label for="order-by">Ordenar por: </label>
+          <select name="order" id="order">
+            <option value="order-1">Relevanccia</option>
+            <option value="order-2">Mayor precio</option>
+            <option value="order-3">Menor precio</option>
+          </select>
+        </form>
+        <hr />
+
+        <table align="center">
+          <thead>
+            <tr>
+              <th>
+                <h3>Camiseta Teaching tiny disciples</h3>
+              </th>
+              <th>
+                <h3>Buso gris</h3>
+              </th>
+              <th>
+                <h3>Pantalón Jogger Beige</h3>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <img
+                  src="../source/img/camiseta.webp"
+                  alt="camiseta-1"
+                  width="300px"
+                />
+              </td>
+              <td>
+                <img
+                  src="../source/img/chompa-gris.jpg"
+                  alt="Buso-1"
+                  width="300px"
+                />
+              </td>
+              <td>
+                <img
+                  src="../source/img/pantalon.webp"
+                  alt="camiseta-1"
+                  width="270px"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>$60.000</td>
+              <td>$150.000</td>
+              <td>$100.000</td>
+            </tr>
+            <tr>
+              <td>
+                <form action="#">
+                  <label for="quantities">Cantidad de prendas: </label>
+                  <input
+                    type="number"
+                    name="clothing-items"
+                    id="Clothing-items"
+                    placeholder="Ingresa la cantidad."
+                    min="0"
+                  />
+                </form>
+              </td>
+              <td>
+                <form action="#">
+                  <label for="quantities">Cantidad de prendas: </label>
+                  <input
+                    type="number"
+                    name="clothing-items"
+                    id="Clothing-items"
+                    placeholder="Ingresa la cantidad."
+                    min="0"
+                  />
+                </form>
+              </td>
+              <td>
+                <form action="#">
+                  <label for="quantities">Cantidad de prendas: </label>
+                  <input
+                    type="number"
+                    name="clothing-items"
+                    id="Clothing-items"
+                    placeholder="Ingresa la cantidad."
+                    min="0"
+                  />
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <form action="#">
+                  <label for="sizes">Talla: </label>
+                  <select name="size" id="size">
+                    <option disabled selected>Elige tu talla aquí</option>
+                    <option value="size-S">S</option>
+                    <option value="size-M">M</option>
+                    <option value="size-L">L</option>
+                    <option value="size-XL">XL</option>
+                  </select>
+                </form>
+              </td>
+              <td>
+                <form action="#">
+                  <label for="sizes">Talla: </label>
+                  <select name="size" id="size">
+                    <option disabled selected>Elige tu talla aquí</option>
+                    <option value="size-S">S</option>
+                    <option value="size-M">M</option>
+                    <option value="size-L">L</option>
+                    <option value="size-XL">XL</option>
+                  </select>
+                </form>
+              </td>
+              <td>
+                <form action="#">
+                  <label for="sizes">Talla: </label>
+                  <select name="size" id="size">
+                    <option disabled selected>Elige tu talla aquí</option>
+                    <option value="size-S">S</option>
+                    <option value="size-M">M</option>
+                    <option value="size-L">L</option>
+                    <option value="size-XL">XL</option>
+                  </select>
+                </form>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="submit" value="Comprar" />
+              </td>
+              <td>
+                <input type="submit" value="Comprar" />
+              </td>
+              <td>
+                <input type="submit" value="Comprar" />
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <hr />
+        <div class="container-product">
+          <h2>Camiseta Versace</h2>
+          <img
+            src="https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw4fefbb86/original/90_1013805-1A09659_1E510_10_VersaceMilanoStampSweater-Clothing-Versace-online-store_1_2.jpg?sw=850&q=85&strip=true"
+            alt="camiseta-1"
+            width="300px"
+          />
+
+          <div class="features">
+            <p><strong>PRECIO</strong></p>
+            <span>$100.000</span>
+
+            <p><strong> CANTIDAD </strong></p>
+            <form action="#">
+              <label for="quantities">Cantidad de prendas: </label>
+              <input
+                type="number"
+                name="clothing-items"
+                id="Clothing-items"
+                placeholder="Ingresa la cantidad."
+                min="0"
+              />
+              <input type="submit" value="Enviar" />
+            </form>
+
+            <p><strong>TALLAS</strong></p>
+            <form action="#">
+              <label for="sizes">Talla: </label>
+              <select name="size" id="size">
+                <option disabled selected>Elige tu talla aquí</option>
+                <option value="size-S">S</option>
+                <option value="size-M">M</option>
+                <option value="size-L">L</option>
+                <option value="size-XL">XL</option>
+                <input type="submit" value="Enviar" />
+              </select>
+            </form>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="container-product">
+          <h2>Pantalón Versace</h2>
+          <img
+            src="https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw80d21499/original/90_1013253-1A09454_1B000_10_BaroccoJacquardKnitPants-Clothing-Versace-online-store_0_2.jpg?sw=850&q=85&strip=true"
+            alt="camiseta-1"
+            width="300px"
+          />
+
+          <div class="features">
+            <p><strong>PRECIO</strong></p>
+            <span>$100.000</span>
+
+            <p><strong>CANTIDAD</strong></p>
+            <form action="#">
+              <label for="quantities">Cantidad de prendas: </label>
+              <input
+                type="number"
+                name="clothing-items"
+                id="Clothing-items"
+                placeholder="Ingresa la cantidad."
+                min="0"
+              />
+              <input type="submit" value="Enviar" />
+            </form>
+
+            <p><strong>TALLA</strong></p>
+            <form action="#">
+              <label for="sizes">Talla: </label>
+              <select name="size" id="size">
+                <option disabled selected>Elige tu talla aquí</option>
+                <option value="size-S">S</option>
+                <option value="size-M">M</option>
+                <option value="size-L">L</option>
+                <option value="size-XL">XL</option>
+                <input type="submit" value="Enviar" />
+              </select>
+            </form>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="container-product">
+          <h2>Blazer Versace</h2>
+          <img
+            src="https://www.versace.com/dw/image/v2/BGWN_PRD/on/demandware.static/-/Sites-ver-master-catalog/default/dw375a16e8/original/90_E76GAQ704-EN0307_E899_10_Single~BreastedBlazer-Men-Versace-online-store_0_2.jpg?sw=850&q=85&strip=true"
+            alt="Buso-1"
+            width="300px"
+          />
+
+          <div class="features">
+            <p><strong>PRECIO</strong></p>
+            <span>$150.000</span>
+
+            <p><strong>CANTIDAD</strong></p>
+            <form action="#">
+              <label for="quantities">Cantidad de prendas: </label>
+              <input
+                type="number"
+                name="clothing-items"
+                id="Clothing-items"
+                placeholder="Ingresa la cantidad."
+                min="0"
+              />
+              <input type="submit" value="Enviar" />
+            </form>
+
+            <p><strong>TALLA</strong></p>
+            <form action="#">
+              <label for="sizes">Talla: </label>
+              <select name="size" id="size">
+                <option disabled selected>Elige tu talla aquí</option>
+                <option value="size-S">S</option>
+                <option value="size-M">M</option>
+                <option value="size-L">L</option>
+                <option value="size-XL">XL</option>
+                <input type="submit" value="Enviar" />
+              </select>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- Pie de página -->
+    <footer>
+      <div class="footer">
+        <div class="footer-section about">
+          <h3>
+            <a href="./about_us.html">Acerca de Nosotros</a>
+          </h3>
+          <p>
+            Somos una tienda de moda comprometida con la calidad y el estilo.
+          </p>
+        </div>
+
+        <div class="footer-section contact">
+          <h3>
+            <a href="./form_contact_us.html">Contacto</a>
+          </h3>
+          <p>Email: info@dhtienda.com</p>
+          <a href="https://api.whatsapp.com/send?phone=573126904520">
+            <img src="../source/img/wp.svg" height="25px" alt="Whatsapp" />
+          </a>
+          <span>Telefono +57 3126904520</span>
+
+        </div>
+                
+        <div class="footer-section follow">
+          <h3>Síguenos</h3>
+          <a href="#" class="social-icon"
+            ><img src="../source/img/fb.svg" alt="Facebook"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="../source/img/ig.svg" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 DH Store | Desarrollado por Diego, Cristian y Juan Pablo
+        </p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

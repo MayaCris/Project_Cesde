@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tienda de Ropa</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Enlace a tu hoja de estilos CSS -->
+  </head>
+  <body>
+    <!-- índice  -->
+    <header>
+      <div class="logo">
+        <a href="./index.html">
+          <img src="./source/img/Logo1.jpg" height="80px" alt="logo"/>
+        </a>
+      </div>
+      <h1>DH Store</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Inicio</a></li>
+          <li><a href="./product.html">Productos</a></li>
+          <li><a href="./form_contact_us.html">Contacto</a></li>
+          <li><a href="./about_us.html">Sobre nosotros</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Sección de categorías y sub-categorías -->
+    <section class="categorias">
+      <h2>Categorías</h2>
+      <nav class="nav-categorias">
+        <!-- Categoria Hombres-->
+        <li>
+          <a href="#">Hombres</a>
+          <!-- Sub-cateogría -->
+          <ul>
+            <li><a href="#">Camisetas</a></li>
+            <li><a href="#">Pantalones</a></li>
+            <!-- Agrega más subcategorías si es necesario -->
+          </ul>
+        </li>
+
+        <!-- Categoria Mujeres-->
+        <li>
+          <a href="#">Mujeres</a>
+          <!-- Sub-cateogría -->
+          <ul>
+            <li><a href="#">Camisetas</a></li>
+            <li><a href="#">Pantalones</a></li>
+            <!-- Agrega más subcategorías si es necesario -->
+          </ul>
+        </li>
+
+        <!-- Categoria Unisex-->
+        <li>
+          <a href="#">Unisex</a>
+          <!-- Sub-cateogría -->
+          <ul>
+            <li><a href="#">Camisetas</a></li>
+            <li><a href="#">Pantalones</a></li>
+            <!-- Agrega más subcategorías si es necesario -->
+          </ul>
+        </li>
+      </nav>
+    </section>
+
+    <hr />
+
+    <!-- Sección de destacados -->
+    <section class="destacados">
+      <h2>Productos Destacados</h2>
+      <table>
+        <thead>
+          <tr>
+            <!-- Títutlos de productos -->
+            <th>Saco volcán</th>
+            <th>Jogger negro</th>
+            <th>Sneakers beige</th>
+          </tr>
+        </thead>
+        <tbody align="center">
+          <tr>
+            <!-- Imágenes de los productos -->
+            <td>
+              <figure>
+                <img
+                  src="https://m.media-amazon.com/images/I/61xKodD-CsL._AC_SX342_.jpg"
+                  alt="Saco"
+                  width="150px"
+                />
+                <figcaption>110.000 COP</figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img
+                  src="https://m.media-amazon.com/images/I/51fNsAyldjL._AC_SY445_.jpg"
+                  alt="Jogger"
+                  width="100px"
+                />
+                <figcaption>120.000 COP</figcaption>
+              </figure>
+            </td>
+            <td>
+              <figure>
+                <img
+                  src="https://m.media-amazon.com/images/I/71IUwscDULL._AC_SX395_.jpg"
+                  alt="Zapato"
+                  width="150px"
+                />
+                <figcaption>130.000 COP</figcaption>
+              </figure>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sección de ofertas -->
+    <section class="ofertas">
+      <h2>Ofertas Especiales</h2>
+      <p style="font-size: large">
+        ¡Compra ropa de calidad a los mejores precios!
+      </p>
+
+      <ul>
+        <li>
+          <p>¡Descuento del 20% en sacos arcoíris para mujeres!</p>
+          <figure>
+            <img
+              src="https://m.media-amazon.com/images/I/715V+XSz1GL._AC_SX569_.jpg"
+              alt="Oferta 1"
+              width="150px"
+            />
+            <figcaption>
+              Antes <s>500.000 COP</s>, ahora <strong>400.000 COP</strong>
+            </figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <p>Aprovecha la promoción en shorts para hombres.</p>
+          <figure>
+            <img
+              src="https://m.media-amazon.com/images/I/611a9ZZAecL._AC_SX522_.jpg"
+              alt="Oferta 2"
+              width="150px"
+            />
+            <figcaption>Llevo 2 shorts por el precio de 1</figcaption>
+          </figure>
+        </li>
+        <!-- Agregar más elementos de lista para cada oferta -->
+      </ul>
+    </section>
+
+    <hr />
+
+    <!-- Pie de página -->
+    <footer>
+      <div class="footer">
+        <div class="footer-section about">
+          <h3>
+            <a href="./about_us.html">Acerca de Nosotros</a>
+          </h3>
+          <p>
+            Somos una tienda de moda comprometida con la calidad y el estilo.
+          </p>
+        </div>
+
+        <div class="footer-section contact">
+          <h3>
+            <a href="./form_contact_us.html">Contacto</a>
+          </h3>
+          <p>Email: info@dhtienda.com</p>
+          <a href="https://api.whatsapp.com/send?phone=573126904520">
+            <img src="../source/img/wp.svg" height="25px" alt="Whatsapp" />
+          </a>
+          <span>Telefono +57 3126904520</span>
+
+        </div>
+                
+        <div class="footer-section follow">
+          <h3>Síguenos</h3>
+          <a href="#" class="social-icon"
+            ><img src="../source/img/fb.svg" alt="Facebook"
+          /></a>
+          <a href="#" class="social-icon"
+            ><img src="../source/img/ig.svg" alt="Instagram"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2024 DH Store | Desarrollado por Diego, Cristian y Juan Pablo
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

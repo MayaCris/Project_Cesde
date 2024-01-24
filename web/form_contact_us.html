@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contacto</title>
+</head>
+
+<body>
+  <!-- índice  -->
+  <header>
+    <div class="logo">
+      <a href="./index.html">
+        <img src="./source/img/Logo1.jpg" height="80px" alt="logo" />
+      </a>
+    </div>
+    <h1>DH Store</h1>
+    <nav>
+      <ul>
+        <li><a href="./index.html">Inicio</a></li>
+        <li><a href="./product.html">Productos</a></li>
+        <li><a href="./form_contact_us.html">Contacto</a></li>
+        <li><a href="./about_us.html">Sobre nosotros</a></li>
+      </ul>
+    </nav>
+  </header>
+  <table>
+  <h2>Formulario de Contacto</h2>
+    <form>
+      <label for="nombreApellido">Nombre y Apellido</label>
+      <input type="text" id="nombreApellido" name="nombreApellido" required />
+
+      <br />
+      <br />
+
+      <label for="email">Correo Electrónico</label>
+      <input type="email" id="email" name="email" required />
+
+      <br />
+      <br />
+
+      <label for="telefono">Teléfono</label>
+      <input type="tel" id="telefono" name="telefono" />
+
+      <br />
+      <br />
+
+      <label for="direccion">Dirección</label>
+      <input type="text" id="direccion" name="direccion" />
+
+      <br />
+      <br />
+
+      <label for="ciudad">Seleccione la Ciudad</label>
+      <select id="ciudad" name="ciudad">
+        <option value="" disabled selected>Seleccione...</option>
+        <option value="Medellin">Medellín</option>
+        <option value="Bogota">Bogotá</option>
+        <option value="Cali">Cali</option>
+        <option value="Manizales">Manizales</option>
+        <option value="Pereira">Pereira</option>
+      </select>
+
+      <br />
+      <br />
+
+      <tr>
+        <td align="center" colspan="1">
+          <label for="waytopay">Forma De Pago</label>
+        </td>
+        <td>
+          <input type="radio" name="waytopay" id="cash">Efectivo <br>
+          <input type="radio" name="waytopay" id="debicard">Tarjeta Debito <br>
+          <input type="radio" name="waytopay" id="creditcard">Tarjeta Credito
+
+        </td>
+      </tr>
+      <label for="mensaje">Mensaje</label> <br />
+      <textarea id="mensaje" name="mensaje" cols="37" rows="4" required></textarea>
+      <br />
+
+      <td align="center" colspan="2">
+        <!-- <input type="submit" value="Enviar"> -->
+        <button type="submit" id="send" name="send">
+          Enviar
+        </button>
+
+
+        <button type="reset" id="reset" name="reset">
+          Limpiar
+        </button>
+        <hr />
+    </form>
+  </table>
+  <!-- Pie de página -->
+  <footer>
+    <div class="footer">
+      <div class="footer-section about">
+        <h3>
+          <a href="./about_us.html">Acerca de Nosotros</a>
+        </h3>
+        <p>
+          Somos una tienda de moda comprometida con la calidad y el estilo.
+        </p>
+      </div>
+
+      <div class="footer-section contact">
+        <h3>
+          <a href="./form_contact_us.html">Contacto</a>
+        </h3>
+        <p>Email: info@dhtienda.com</p>
+        <a href="https://api.whatsapp.com/send?phone=573126904520">
+          <img src="../source/img/wp.svg" height="25px" alt="Whatsapp" />
+        </a>
+        <span>Telefono +57 3126904520</span>
+
+      </div>
+
+      <div class="footer-section follow">
+        <h3>Síguenos</h3>
+        <a href="#" class="social-icon"><img src="../source/img/fb.svg" alt="Facebook" /></a>
+        <a href="#" class="social-icon"><img src="../source/img/ig.svg" alt="Instagram" /></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; 2024 DH Store | Desarrollado por Diego, Cristian y Juan Pablo
+      </p>
+    </div>
+  </footer>
+</body>
+
+</html>
