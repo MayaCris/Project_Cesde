@@ -8,9 +8,13 @@ def nomina():
 
     valuesalary = hourvalue * quantityhour
     vextras = hextras * hourvalue * 1.35
+    netpay = vextras + valuesalary
 
-
-
+    print("Estimado ", name)
+    print("-----------------------------------------------------")
+    print("El valor de las horas ordinarias es: ", valuesalary)
+    print("El valor de las horas extras es: ", vextras )
+    print("El neto a pagar es: ", netpay)
 
 
 if __name__ == '__main__':
