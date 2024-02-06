@@ -1,5 +1,6 @@
 
 def nomina():
+    
     name = str(input("Digite su nombre: "))
     income = float(input("Digite su salario: "))
     quantityhour = float(input("Digite la cantidad de horas trabajadas: "))

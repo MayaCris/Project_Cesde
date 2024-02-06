@@ -9,16 +9,35 @@
 import pandas as pd
 
 print(f'Imprime lista de Python')
-nameStudent = ['Melissa', 'Mateo', 'David', 'Alejandro']
-print(nameStudent)
+datos = {
+    "nombres": ["Juan", "Laura","Clara", "melissa"],
+    "edad": [10,20,30,35],
+    "ciudad":["Bogota", "Medellin", "Cali", "Barranquilla"]
+}
+print(datos)
 
 print(f'Imprime las series tomadas en pandas')
-serieNames =pd.Series(nameStudent)
-print(serieNames)
+dfdatos = pd.DataFrame(datos)
+print(dfdatos)
+print("___________________________________________")
+print(dfdatos.head(1))
+print("___________________________________________")
+print(dfdatos["nombres"])
+print(len(dfdatos["edad"]))
+print("___________________________________________")
+print(dfdatos.info())
+print(dfdatos["edad"] > 20)
+print("___________________________________________")
+#print(dfdatos[dfdatos["edad" > 20]])
+
+dfdatos["genero"] = ["M","F","F","F"]
+print(dfdatos)
+
+
 
 #Imprimir un elemento de la serie
-print(f'Imprimir un elemento de la serie, dando la posición')
-print(len(serieNames))
-print(serieNames [len(serieNames)-2])
+#print(f'Imprimir un elemento de la serie, dando la posición')
+#print(len(serieNames))
+#print(serieNames [len(serieNames)-2])
 
 
