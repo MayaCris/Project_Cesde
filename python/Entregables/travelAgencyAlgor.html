@@ -1,0 +1,44 @@
+Función bono: imprime "Bienvenido a la agencia de viajes XYZ" y "En donde todos tus sueños se hacen realidad".
+
+Para cada usuario en usuarios, valide si el destino es igual a Guajira, Chicamocha o Llanos Orientales, entonces:
+
+1. Función principal del programa:
+   - Imprime el mensaje de bienvenida.
+   - Por cada número en el rango de 10, realiza lo siguiente:
+     - Llama a la función "menu" para mostrar el menú principal.
+     - Si la opción es 1:
+       - Crea un diccionario llamado "usuario" para almacenar la información.
+       - Solicita al usuario que ingrese su nombre, la cantidad de personas adultas y la cantidad de niños.
+       - Llama a la función "destino" para que el usuario elija un destino.
+       - Llama a la función "subtotal" con el argumento "usuario" para calcular el costo y establecer el destino.
+       - Agrega toda la información del usuario al final de la lista "usuarios".
+     - Si la opción es 2, llama a la función "printquote" para imprimir la cotización.
+     - Si la opción es 3, llama a la función "reports" para imprimir los reportes.
+     - Si la opción es 4, termina el bucle y finaliza el programa.
+     - Si la opción no es válida, imprime un mensaje de error y vuelve al menú principal.
+
+2. Función que muestra el menú principal y permite ingresar un input:
+   - Imprime las opciones del menú principal.
+   - Almacena la opción ingresada en la variable global "option1".
+
+3. Función para escoger el destino ingresando una opción según el menú:
+   - Imprime el menú de destinos y registra el input.
+   - Almacena la opción ingresada en la variable global "option2".
+
+4. Función que calcula el costo y establece el destino según lo ingresado por el usuario:
+   - Si elige Guajira, calcula el costo de los adultos y niños, establece el destino y suma el subtotal para la cotización.
+   - Si elige Chicamocha, calcula el costo de los adultos y niños, establece el destino y suma el subtotal para la cotización.
+   - Si elige Llanos Orientales, calcula el costo de los adultos y niños, establece el destino y suma el subtotal para la cotización.
+   - Si ingresa otro número, imprime un mensaje de error y lo devuelve al menú de destino.
+
+5. Función para imprimir la cotización:
+   - Pregunta al usuario cómo quiere imprimir la cotización.
+   - Si elige imprimir en formato tabla, utiliza pandas para imprimirlo en tabla.
+   - Si elige imprimir en lista, recorre el diccionario e imprime todas las cotizaciones realizadas en listas individuales.
+   - Si ingresa un número diferente, imprime un mensaje de error y lo devuelve al menú principal.
+
+6. Función para imprimir contadores y sumas según las especificaciones del proyecto:
+   - Calcula y muestra la cantidad de personas que viajan a cada destino.
+   - Calcula y muestra el total de dinero de los viajes para cada destino.
+   - Calcula y muestra el total de personas adultas y niños que viajan en todas las cotizaciones.
+   - Calcula y muestra el total de dinero de todas las cotizaciones.

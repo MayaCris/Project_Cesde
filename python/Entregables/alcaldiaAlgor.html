@@ -1,0 +1,30 @@
+
+
+Función bono: imprime "Bienvenido"
+Para cada usuario en usuarios, valide si estrato es igual a 1, entonces:
+
+1. Función principal para calcular los bonos:
+   - Imprime "Bienvenido al menú de la Alcaldía de Xochimilco" y "Su bienestar es nuestra prioridad."
+   - Por cada número en el rango de 10, haga lo siguiente:
+     - Llama a la función "menú principal".
+     - Si la opción es 1:
+       - Crea un diccionario llamado "usuario" para almacenar la información.
+       - Solicita al usuario que ingrese el nombre del beneficiario, el estrato y el número de hijos.
+       - Valida las condiciones para calcular el bono según la tabla proporcionada.
+       - Agrega la información del usuario al final de la lista "usuarios".
+       - Crea un DataFrame de Pandas llamado "dfusuarios" para imprimir la información en formato de tabla.
+     - Si la opción es 2, llama a la función "reporteUsuarios".
+     - Si la opción es 3, termina el bucle.
+     - Si la opción no es válida, imprime un mensaje de error y vuelve al menú principal.
+
+2. Función para mostrar el menú principal:
+   - Imprime el menú principal con opciones para ingresar datos, generar reporte o salir.
+   - Almacena la opción ingresada en la variable global "opcion1".
+
+3. Función para generar el reporte de usuarios:
+   - Inicializa contadores y acumuladores para las estadísticas.
+   - Por cada usuario en la lista de usuarios, realiza lo siguiente:
+     - Incrementa los contadores y acumuladores según las condiciones para calcular las estadísticas.
+   - Imprime las estadísticas calculadas, incluyendo la cantidad de personas por estrato, dinero entregado por estrato, cantidad de personas por cantidad de hijos y dinero total entregado en bonos.
+
+4. Si el programa se ejecuta como el programa principal, llama a la función "bonos".

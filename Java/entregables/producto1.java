@@ -9,7 +9,6 @@ package entregables;
 //2.Documentar el código para que sea facil de entender por otra persona y exponer el poryecto de otro compañero
 
 //Librerías
-import java.sql.SQLOutput;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.*;
