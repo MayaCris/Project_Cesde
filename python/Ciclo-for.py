@@ -65,7 +65,7 @@ def clasep():
                         1. Python
                         2. Logica"""))
     while menu != 0:
-        if (menu = 1):
+        if (menu == 1):
             nota = float(input("Ingrese la nota: "))
             if (nota > 3.0):
                 ganadores.append(name)
