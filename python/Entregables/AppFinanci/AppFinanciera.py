@@ -386,7 +386,7 @@ class AppFi:
 #Función para llamar la ejecución de todo el programa
 def ejecucion():
 
-    DbBanks = r"Entregables\AppFinanci\DbBanks.db" #--> Se le asigna la ubicación del archivo de la base de datos
+    DbBanks = r"Entregables\AppFinanci\DbBank\DbBanks.db" #--> Se le asigna la ubicación del archivo de la base de datos
     dbManager = AppFi(DbBanks) #-->Se instancia la clase AppFi, que maneja todo el programa
 
 if __name__ == '__main__':
