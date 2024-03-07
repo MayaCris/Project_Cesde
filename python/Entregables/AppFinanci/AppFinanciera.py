@@ -1,8 +1,9 @@
-from datetime import datetime
-import random
+from email import header
 import sqlite3
 from sqlite3 import Error
-from tkinter import YES # <-- Nos ayuda a capturar errores en la conexión con la DB 
+from datetime import datetime
+import random
+from tabulate import tabulate
 import pandas as pd
 
 
@@ -165,8 +166,9 @@ class AppFi:
     
     #Muestra el menu secundario o de operaciones        
     def secondMenu(self):
+        currentId = self.currentUser[0]
         # Valida si el retorno de la lista self.currentUser[0] en la primera posición está vacío
-        if self.currentUser[0] is not None:
+        if currentId is not None:
             
             while True:
                 print("┌" + "".center(35, "─") + "┐")
@@ -182,20 +184,20 @@ class AppFi:
                 6. Salir\n"""))
                         
                 if opc == 1:
-                    self.withdrawal(self.currentUser[0])
+                    self.withdrawal(currentId)
                     
                 
                 elif opc == 2:
-                    self.deposit(self.currentUser[0])
+                    self.deposit(currentId)
                 
                 elif opc == 3:
-                    self.consultBalance(self.currentUser[0])
+                    self.consultBalance(currentId)
                 
                 elif opc == 4:
-                    self.consultTransactions(self.currentUser[0])
+                    self.consultTransactions(currentId)
                 
                 elif opc == 5:
-                    self.changePassword(self.currentUser[0])
+                    self.changePassword(currentId)
                 
                 elif opc == 6:
                     print("\nSaliendo de la sesión. Hasta pronto. \n")
@@ -217,6 +219,10 @@ class AppFi:
             print("\nRevisa tu balance, no cuentas con saldo para realizar esta operación")
             self.secondMenu()
         
+        if amount > currentBalance:
+            print("\nEl valor a retirar supera su saldo. Por favor valide\n")
+            self.secondMenu()
+        
         #Valida si la cantidad a retirar es positiva                        
         if amount > 0:
             newBalance = currentBalance - amount #-->Actualiza el saldo
@@ -234,12 +240,11 @@ class AppFi:
             
     #Función para insertar las transacciones en la base de datos, a la cual se le pasan las variables que debe ingresar
     def insertTransaction(self, idtransaction, currentId, date, typetransaction, description, amount, newBalance):
-        cur = self.conn.cursor()
-         
-        queryInsertTransaction = """
-        INSERT INTO transactions (idtransaction, iduser, date, typetransaction, description, amount, balance) values (?, ?, ?, ?, ?, ?, ?)
-        """
         try:
+            cur = self.conn.cursor()
+            queryInsertTransaction = """
+            INSERT INTO transactions (idtransaction, iduser, date, typetransaction, description, amount, balance) values (?, ?, ?, ?, ?, ?, ?)
+            """
             cur.execute(queryInsertTransaction, (idtransaction, currentId, date, typetransaction, description, amount, newBalance))
             self.conn.commit() #-->Metodo para que se finalice la inserción en la base de datos
         
@@ -292,8 +297,20 @@ class AppFi:
             print("Error al obtener el saldo actual del usuario", e)
         
         pdtransactions = pd.DataFrame(transactions, columns=['idtransaction', 'iduser', 'date', 'typetransaction', 'description', 'amount', 'balance'])
+        tableTransactions = [
+            [
+                pdtransactions['idtransaction'].values[i],
+                pdtransactions['date'].values[i],
+                pdtransactions['typetransaction'].values[i],
+                pdtransactions['description'].values[i],
+                pdtransactions['amount'].values[i],
+                pdtransactions['balance'].values[i],
+                
+            ] for i in range(len(pdtransactions))
+        ]
         print("El detalle de los movimientos realizados es:\n")
-        print(pdtransactions.to_string(index=False, justify="center", line_width=100,))
+        
+        print(tabulate(tableTransactions, headers=['Código', 'Fecha', 'Tipo', 'Descripción', 'Valor', 'Saldo'],tablefmt='rounded_grid', disable_numparse=True))
         
         self.secondMenu()
     
@@ -309,8 +326,8 @@ class AppFi:
             if currentBalance is None:
                 return 0
             else:
-                currentBalance = currentBalance[0]
-                return currentBalance
+                newCurrentBalance = currentBalance[0]
+                return newCurrentBalance
             
         except Error as e:
             print("Error al obtener el saldo actual del usuario", e)
