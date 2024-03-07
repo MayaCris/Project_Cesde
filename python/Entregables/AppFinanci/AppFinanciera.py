@@ -385,9 +385,13 @@ class AppFi:
 
 #Función para llamar la ejecución de todo el programa
 def ejecucion():
-
-    DbBanks = r"Entregables\AppFinanci\DbBank\DbBanks.db" #--> Se le asigna la ubicación del archivo de la base de datos
-    dbManager = AppFi(DbBanks) #-->Se instancia la clase AppFi, que maneja todo el programa
+    import os
+    folderRoute = os.path.join(os.path.dirname(__file__), "DbBank") # python/Entregables/AppFinanci/DbBank
+    os.makedirs(folderRoute, exist_ok=True)
+    # DbBanks = r"Entregables\AppFinanci\DbBank" #--> Se le asigna la ubicación del archivo de la base de datos
+    dbFile = os.path.join(folderRoute, "bdBank.bd")
+    
+    dbManager = AppFi(dbFile) #-->Se instancia la clase AppFi, que maneja todo el programa
 
 if __name__ == '__main__':
     ejecucion() 
