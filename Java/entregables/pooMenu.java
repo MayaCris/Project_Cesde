@@ -1,21 +1,12 @@
 package entregables;
 
-//1. Puede ser una funcionalidad de una aplicación financiera que tenga
-// un registro/inicio,
-// que guarde en un array datos
-// Que realice operaciones y validaciones (if, elseif)
-// use al menos, una validación, switch, while, for o forech
-
-//2.Documentar el código para que sea facil de entender por otra persona y exponer el poryecto de otro compañero
-
 //Librerías
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.*;
 
-public class producto1 {
 
-
+public class pooMenu {
     static Scanner sc = new Scanner(System.in); //Escaner para realizar inputs con el teclado
     private static Map<String, User> Users = new HashMap<>(); //Diccionario para almacenar los usuarios
     private static Map<Integer, String> transactions = new HashMap<>(); // Diccionario para almacenar las transacciones
@@ -26,59 +17,44 @@ public class producto1 {
     static float balance = 0; //Saldo del usuario
 
 
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         //Mensaje de bienvenida
+        int option1;
         System.out.println("-------------------------------");
-        System.out.println("Bienvenido al Banco Tu-Progreso SAS");
+        System.out.println("Bienvenido al Banco SAS");
         System.out.println("Donde tu dinero está más que seguro");
         System.out.println("-------------------------------\n");
 
-        //Muestra el menu principal
-        mainmenu();
-        int option1 = sc.nextInt();
+        //Do While para ejecutar el menu principal y cada opción tiene su función que se encuentran más abajo
+        do {
+            System.out.println("Ingrese una de las siguientes opciones \n" +
+                    "1. Registrarse\n" +
+                    "2. Iniciar sesión \n" +
+                    "0. Salir ");
 
-        //While para ejecutar el menu principal y cada opción tiene su función que se encuentran más abajo
-        while (option1 != 0) {
+            option1 = sc.nextInt();
+
             switch (option1) {
+                case 0:
+                    System.out.println("Saliendo del programa. Hasta pronto");
+                    break;
                 case 1:
-                    registeruser();
+                    registerUser();
                     break;
                 case 2:
                     login();
                     break;
-                case 3:
-                    printUser();
-                    break;
-                case 4:
-                    System.out.println("Saliendo del programa. Hasta pronto");
-                    System.exit(0);
-                    break;
-
                 default:
                     System.out.println("Ingrese una opción valida");
+                    break;
             }
-            //Muestra de nuevo el menu
-            mainmenu();
-            option1 = sc.nextInt();
-        }
-        sc.close(); //Limpia el escaner
+
+        } while (option1 != 0);
 
     }
 
-    //Función que muestra el menu principal
-    private static void mainmenu() {
-        System.out.println("Ingrese una de las siguientes opciones \n" +
-                "1. Registrarse\n" +
-                "2. Iniciar sesión \n" +
-                "3. Imprimir usuarios \n" +
-                "4. Salir ");
-    }
-
-
-
-    //Función para registrar un usuario nuevo
-    private static void registeruser() {
+    private static void registerUser() {
         sc.nextLine();
         System.out.println("Ingrese su nombre completo: ");
         String name = sc.nextLine();
@@ -88,7 +64,7 @@ public class producto1 {
 
         //Calcular la edad
         LocalDate nowDate = LocalDate.now(); //trae la fecha actual
-        Period periodo = Period.between(birthdate, nowDate); //con la clase Period se puede hallar la edad del usuario calculando la diferencia entre las dos fechas
+        Period periodo = Period.between(birthdate, nowDate); //con el metodo Period se puede hallar la edad del usuario calculando la diferencia entre las dos fechas
         int age = periodo.getYears(); //Almacenamos la edad en años con el .getYears en la variable age
 
         //Validamos que el usuario sea mayor de edad, de lo contrario, lo lleva al menu principal
@@ -111,8 +87,8 @@ public class producto1 {
         Users.put(email, newUser);
 
         System.out.println("Bienvenido, " + newUser.name + ", se ha registrado correctamente");
-
     }
+
     //Función del inicio de sesión
     private static void login() {
         sc.nextLine();
@@ -184,7 +160,8 @@ public class producto1 {
                 "3. Retiros \n" +
                 //"4. Transferencias \n" +  <-- En desarrollo
                 "4. Ver movimientos \n" +
-                "5. Log out \n");
+                "5. Ver información del usuario \n"+
+                "6. Log out");
         int option2 = sc.nextInt();
         sc.nextLine();
 
@@ -201,13 +178,14 @@ public class producto1 {
                 withdrawals();
                 break;
             //case 4:
-                // realizar transferencias
-
-                //break;
+            // realizar transferencias
+            //break;
             case 4:
                 showTransactions();
                 break;
             case 5:
+                printUser();
+            case 6:
                 currentUser = null; // Cerrar sesión
                 System.out.println("Sesión cerrada. Regresando al menú principal.");
                 break;
@@ -293,3 +271,7 @@ public class producto1 {
         }
     }
 }
+
+
+
+
