@@ -9,7 +9,7 @@ public class whileCount {
 
         while (num < 10){
             //Suma
-            sum = sum + num;
+            sum += num;
             // acumula
             num++;
             System.out.println(sum);

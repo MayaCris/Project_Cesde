@@ -22,7 +22,7 @@ if __name__ == '__main__':
     #persona1.ImprimirDatos()
     #persona2.ImprimirDatos()
     Registrar()
-    user.Imprimir
+    #user.Imprimir
 
 
 

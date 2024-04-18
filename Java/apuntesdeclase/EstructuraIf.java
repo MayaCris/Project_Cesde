@@ -33,43 +33,59 @@ import java.util.Scanner;
 
 
 public class EstructuraIf {
+//    public static void main(String[] args) {
+//        //Inicio de sesión del usuario
+//        //Si es verdadero, "Bienvenido + usuario"
+//        //Si es falso, "Valide sus credenciales"
+//
+//
+//        String pwdValid = "contra";
+//        String userValid = "Andres";
+//        String telephone = "3001234567";
+//        int ageValid = 14;
+//        float heightValid = 1.50f;
+//
+//        Scanner park = new Scanner(System.in);
+//
+//        System.out.println("Ingrese el nombre del usuario: ");
+//        String userName = park.nextLine();
+//        System.out.println("Ingrese la contraseña : ");
+//        String pwdUser = park.nextLine();
+//
+//
+//        if (userName.equals(userValid) && pwdUser.equals(pwdValid)) {
+//            System.out.println("Bienvenido " + userName + ", puedes ingresar");
+//            System.out.println(userName + " por favor ingrese su edad: ");
+//            int ageUser = park.nextInt();
+//            System.out.println("Ingrese la estatura: ");
+//            float height = park.nextFloat();
+//
+//            if ((ageUser >= ageValid) || (height >= heightValid)) {
+//                System.out.println("El usuario " + userName + " puede ingresar");
+//            } else {
+//                System.out.println(userName + " por favor valide sus credenciales ");
+//            }
+//        }
+//        else {
+//            System.out.println("El usuario " + userName + " no puede ingresar");
+//        }
+//
+//    }
+
     public static void main(String[] args) {
-        //Inicio de sesión del usuario
-        //Si es verdadero, "Bienvenido + usuario"
-        //Si es falso, "Valide sus credenciales"
+        boolean isBluetoothEnabled = true;
+        int filesended = 3;
 
-
-        String pwdValid = "contra";
-        String userValid = "Andres";
-        String telephone = "3001234567";
-        int ageValid = 14;
-        float heightValid = 1.50f;
-
-        Scanner park = new Scanner(System.in);
-
-        System.out.println("Ingrese el nombre del usuario: ");
-        String userName = park.nextLine();
-        System.out.println("Ingrese la contraseña : ");
-        String pwdUser = park.nextLine();
-
-
-        if (userName.equals(userValid) && pwdUser.equals(pwdValid)) {
-            System.out.println("Bienvenido " + userName + ", puedes ingresar");
-            System.out.println(userName + " por favor ingrese su edad: ");
-            int ageUser = park.nextInt();
-            System.out.println("Ingrese la estatura: ");
-            float height = park.nextFloat();
-
-            if ((ageUser >= ageValid) || (height >= heightValid)) {
-                System.out.println("El usuario " + userName + " puede ingresar");
-            } else {
-                System.out.println(userName + " por favor valide sus credenciales ");
-            }
+        if (isBluetoothEnabled) {
+            //Send File
+            filesended++;
+            System.out.println("Archivo enviado");
+            System.out.println("La cantidad de archivos enviados es: " + filesended);
+        } else {
+            filesended--;
+            System.out.println("Por favor encienda el Bluetooth para iniciar la transferencia");
+            System.out.println("La cantidad de archivos enviados es: " + filesended);
         }
-        else {
-            System.out.println("El usuario " + userName + " no puede ingresar");
-        }
-
     }
 
 }
