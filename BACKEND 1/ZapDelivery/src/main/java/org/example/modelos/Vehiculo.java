@@ -7,7 +7,7 @@ public class Vehiculo {
     Integer id;
 
     //marca
-    String marca;
+    public String marca;
 
     //modelo
     LocalDate modelo;
@@ -24,6 +24,8 @@ public class Vehiculo {
     //tipo
     String tipo;
 
+    Double autonomia;
+
     //capacidadCarga
     Double capacidadCarga;
 
@@ -36,7 +38,7 @@ public class Vehiculo {
     public Vehiculo() {
     }
 
-    public Vehiculo(Integer id, String marca, LocalDate modelo, Double kilometraje, String color, String descripcion, String tipo, Double capacidadCarga, Integer avaluo) {
+    public Vehiculo(Integer id, String marca, LocalDate modelo, Double kilometraje, String color, String descripcion, String tipo, Double autonomia, Double capacidadCarga, Integer avaluo) {
         this.id = id;
         this.marca = marca;
         this.modelo = modelo;
@@ -44,7 +46,10 @@ public class Vehiculo {
         this.color = color;
         this.descripcion = descripcion;
         this.tipo = tipo;
+        this.autonomia = autonomia;
         this.capacidadCarga = capacidadCarga;
         this.avaluo = avaluo;
     }
+
+
 }
