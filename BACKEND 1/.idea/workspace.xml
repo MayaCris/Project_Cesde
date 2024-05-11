@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b4ef68ee-c85f-448c-a1a8-a2ab86746e1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/BACKEND 1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Doctor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Patient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Ui/UIMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/apuntesdeclase/practiceExam.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/MedicalAppointments/Doctor.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/MedicalAppointments/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/MedicalAppointments/UIMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/entregables/producto1.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/entregables/producto1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/MedicalAppointments/Doctor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/MedicalAppointments/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/MedicalAppointments/UIMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/entregables/producto1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/entregables/producto1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web1/PrimerProyecto/functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Web1/PrimerProyecto/functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web1/PrimerProyecto/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Web1/PrimerProyecto/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web1/PrimerProyecto/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Web1/PrimerProyecto/script.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2gKg12pBBEHNm7j4IRz3vAOjt0z" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/OneDrive/PERSONAL/A-CESDE/REPOSITORIO/BACKEND 1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b4ef68ee-c85f-448c-a1a8-a2ab86746e1a" name="Changes" comment="" />
+      <created>1715451464387</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715451464387</updated>
+      <workItem from="1715451465409" duration="1202000" />
+      <workItem from="1715452679545" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

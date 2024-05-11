@@ -88,7 +88,7 @@ public class producto1 {
 
         //Calcular la edad
         LocalDate nowDate = LocalDate.now(); //trae la fecha actual
-        Period periodo = Period.between(birthdate, nowDate); //con la clase Period se puede hallar la edad del usuario calculando la diferencia entre las dos fechas
+        Period periodo = Period.between(birthdate, nowDate); //con el metodo Period se puede hallar la edad del usuario calculando la diferencia entre las dos fechas
         int age = periodo.getYears(); //Almacenamos la edad en años con el .getYears en la variable age
 
         //Validamos que el usuario sea mayor de edad, de lo contrario, lo lleva al menu principal
@@ -182,9 +182,9 @@ public class producto1 {
                 "1. Consultar saldo\n" +
                 "2. Depositar \n" +
                 "3. Retiros \n" +
-                //"4. Transferencias \n" +  <-- En desarrollo
-                "4. Ver movimientos \n" +
-                "5. Log out \n");
+                "4. Transferencias \n" +
+                "5. Ver movimientos \n" +
+                "6. Log out \n");
         int option2 = sc.nextInt();
         sc.nextLine();
 
@@ -197,17 +197,15 @@ public class producto1 {
                 deposit();
                 break;
             case 3:
-                // realizar retiros
                 withdrawals();
                 break;
-            //case 4:
-                // realizar transferencias
-
-                //break;
             case 4:
-                showTransactions();
+                wireTransfer();
                 break;
             case 5:
+                showTransactions();
+                break;
+            case 6:
                 currentUser = null; // Cerrar sesión
                 System.out.println("Sesión cerrada. Regresando al menú principal.");
                 break;
@@ -290,6 +288,27 @@ public class producto1 {
         }else {
             //Imprime mensaje de error, en caso de que el valor del retiro sea mayor al saldo.
             System.out.println("Error al realizar el retiro. Valide sus fondos");
+        }
+    }
+
+    private static void wireTransfer() {
+        System.out.println("Ingrese el monto a transferir: ");
+        float amount = sc.nextFloat();
+        sc.nextLine();
+        System.out.println("Ingrese el detalle de la transferencia: ");
+        String detail = sc.nextLine();
+        sc.nextLine();
+        System.out.println("Ingrese el numero de la cuenta: ");
+        String accountNumber = sc.nextLine();
+        sc.nextLine();
+
+        if (amount <= balance){
+            int transactionID = generateTransactionID();
+            balance = balance - amount;
+            transactions.put(transactionID, "Detalle: " + detail + " " + accountNumber + " - Valor: " + amount);
+            System.out.println("Transferencia realizada con exito. ID transaccion: " + transactionID);
+        }else {
+            System.out.println("Error al realizar la transferencia. Valide sus fondos");
         }
     }
 }

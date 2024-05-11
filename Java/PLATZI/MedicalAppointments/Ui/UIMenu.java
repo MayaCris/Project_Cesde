@@ -1,9 +1,10 @@
-package PLATZI.MedicalAppointments;
+package PLATZI.MedicalAppointments.Ui;
 
 import java.util.Scanner;
 
 public class UIMenu {
     static Scanner sc = new Scanner(System.in);
+    public static final String[] MONTHS = {"Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"};
 
     public static void showMenu(){
 
@@ -52,6 +53,9 @@ public class UIMenu {
             switch (response){
                 case 1:
                     System.out.println("::Book and appointment");
+                    for (int i = 1; i < 4; i++) {
+                        System.out.println(i + ". " + MONTHS[i]);
+                    }
                     break;
                 case 2:
                     System.out.println("::My appointments");
@@ -63,6 +67,7 @@ public class UIMenu {
 
         }while(response != 0);
     }
+
 
 
 

@@ -1,12 +1,12 @@
-package MedicalAppointments;
+package PLATZI.MedicalAppointments;
 
 
 public class Doctor {
-    static Integer numDoc; // Solo fue un ejemplo
 
 
     static Integer id = 0; //Autoincrement
     String name;
+    String email;
     String speciality;
 
     //Contructores
@@ -17,11 +17,10 @@ public class Doctor {
         id++;
     }
 
-    public Doctor(Integer id, String name, String speciality) {
-        this.id = id;
+    public Doctor( String name, String speciality) {
         this.name = name;
         this.speciality = speciality;
-
+        id++;
     }
 
     //Comportamientos

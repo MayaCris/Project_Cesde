@@ -1,3 +1,10 @@
+//*Tipos de variables en JavaScript:
+// 1. var --> Se puede reasignar y redeclarar
+// 2. let --> Se puede reasignar pero no redeclarar
+// 3. const --> No se puede reasignar ni redeclarar
+
+//
+
 
 // var mensaje = 'Hola, Mundo!';
 // console.log(mensaje);
@@ -26,7 +33,7 @@
 // console.log(typeof(otravariable));
 
 
-//  --> atajo para para comentar varias lineas de codigo = ctrl + }
+//*  --> atajo para para comentar varias lineas de codigo = ctrl + }
 // let numero = [1,2,3,4,5,6,7,8,9,10];
 
 // console.warn('Advertencia');
@@ -250,22 +257,22 @@
     // }
 
     //* --> Bucle Do While:
-    let index = 0; 
+    // let index = 0; 
 
-    do {
-        console.log('Hola Mundo: ' + index);
-        let respuesta = prompt('¿Desea repetir el ciclo?');
-        if(respuesta === 'no'){
-            console.log('Adios');
-            repetir = false;
-            break
-        }
-        else(respuesta === 'si'); {
-            index++;
-            repetir = true;
-        }
+    // do {
+    //     console.log('Hola Mundo: ' + index);
+    //     let respuesta = prompt('¿Desea repetir el ciclo?');
+    //     if(respuesta === 'no'){
+    //         console.log('Adios');
+    //         repetir = false;
+    //         break
+    //     }
+    //     else(respuesta === 'si'); {
+    //         index++;
+    //         repetir = true;
+    //     }
         
-    } while (repetir);
+    // } while (repetir);
 
 
 

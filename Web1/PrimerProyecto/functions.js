@@ -30,7 +30,7 @@
 //     let ageUser = year - age;
 //     if (ageUser >= 18) {
 //         console.log('Your age is: ' + ageUser + ' y eres mayor de edad');
-        
+
 //     }else {
 //         console.log('Your age is: ' + ageUser + 'y eres menor de edad');
 //     }
@@ -60,21 +60,78 @@
 //*5. Funciones flecha (ES6+)
 
 
-let logInFlecha = (user, password) => {
-    
-    if (user === 'admin' && password === 'admin123') {
-        return "tokenAdmin"
-    }else {
-        console.log('Usuario o contraseña incorrectos');
-    }
-    
-}
+// let logInFlecha = (user, password) => {
 
-let user = prompt('Ingrese su usuario:');
-let password = prompt('Ingrese su contraseña:');
+//     if (user === 'admin' && password === 'admin123') {
+//         return "tokenAdmin"
+//     }else {
+//         console.log('Usuario o contraseña incorrectos');
+//     }
 
-logInFlecha(user, password);
-if (logInFlecha = "tokenAdmin") {
-    console.log('Bienvenido a la plataforma de administración');
-    console.log(logInFlecha)
-}
+// }
+
+// let user = prompt('Ingrese su usuario:');
+// let password = prompt('Ingrese su contraseña:');
+
+// logInFlecha(user, password);
+// if (logInFlecha = "tokenAdmin") {
+//     console.log('Bienvenido a la plataforma de administración');
+//     console.log(logInFlecha)
+// }
+
+//* Argumentos y parámetros de una función
+// Los argumentos son los valores que se pasan a la función al momento de llamarla.
+// Los parámetros son los valores que recibe la función al momento de ser declarada. ==> 
+
+// function suma(a, b) { //(a, b) son los parametros de la función
+//     c = a + b;
+//     console.log("El resultado de la suma es: " + c);
+// }
+// suma(5, 5); // (5, 5) son los argumentos de la función
+
+// var suma2 = (a, b) => {
+//     c = a + b;
+//     console.log("El resultado de la suma es: " + c);
+// }
+
+// suma2(10, 10);
+
+// var suma3 = (numero1, numero2, numero3, numero4) => {
+//     console.log("Resultado de suma3: " + numero1, numero2, numero3, numero4);
+
+// }
+
+// suma3("25", true, [23,54,12], 4);
+
+
+// var valoruno = prompt('Ingrese el valor uno: ');
+// var valordos = prompt('Ingrese el valor dos: ');
+
+// var sumaValores = (valoruno, valordos) => {
+//     var resultado = valoruno + valordos;
+//     console.log('El resultado de la suma es: ' + resultado);
+// }
+// sumaValores(valoruno, valordos);
+
+//*Funciones con retorno de un valor
+
+// function calcularSalario() {
+//     let valorHora = 10000
+//     let cantidadHoras = prompt('Ingrese la cantidad de horas trabajadas: ')
+//     let salario = valorHora * cantidadHoras
+//     return salario
+// }
+
+
+
+// function calcularAuxilioTransporte(salario) {
+//     let auxTransporte = 162000
+//     console.log("El salario sin auxilio de transporte es:" + salario)
+//     if (salario <= 2600000) { //Se puede validar con el resultado de una función
+//         salario += auxTransporte //Pero no se puede usar operadores unarios con el resultado de una función directamente, por eso debo guardar el resultado de la función en una variable
+//         console.log("El salario con auxilio de transporte es:" + salario)
+//     }
+// }
+// calcularAuxilioTransporte(calcularSalario());
+
+
