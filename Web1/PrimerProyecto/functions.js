@@ -59,6 +59,7 @@
 
 //*5. Funciones flecha (ES6+)
 
+//Funciona de forma sincrónica
 
 // let logInFlecha = (user, password) => {
 

@@ -1,0 +1,36 @@
+Arreglos
+
+Es un conjunto de datos conformado por una posición y un valor.
+Se puede considerar una estructura de almacenamiento de datos.
+Solo manejo local
+
+Los arreglos o vectores tienen dos partes:
+
+    Longitud o tamaño:
+        Cantidad de elementos dentreo del arreglo
+        Se define por cualquier numero entero n, donde n tiene un valor
+    Posición:
+        Atributo de acceso al contenido
+        Se define por un número entero n, donde el valor será n-1
+
+METODOS DE LOS Arreglos
+
+Metodos de modificación:
+    Tipos de datos simples:
+
+    --> pop(): Elimina Siempre la ultima posión o ultimo elemento del arreglo
+    --> shift(): Elimina siempre la primera posición del arreglo
+    --> push(): Siempre agrega elementos en la ultima posición
+    --> unshift(): Agrega un nuevo valor a la primera posición 
+
+Metodos de Busqueda (función anonima):
+Metodos de Iteración (función anonima):
+    --> map(): Recorrido al arreglo y retorna uno nuevo con los valores resultantes
+    --> filter(): Recorrido al arreglo y retorna uno nuevo con los valores resultantes que cumplan con una condición dada
+    --> forEach(): Recorrido del arreglo y muestra los valores resultantes
+    --> find(): Recorrido del arrelgo y retorna uno nuevo en el resultante que cumpla con una condición dado
+
+pagina mockaroo.com para crear datos aleatorios
+
+
+    
