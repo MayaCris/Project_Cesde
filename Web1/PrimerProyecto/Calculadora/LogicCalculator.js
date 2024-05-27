@@ -43,9 +43,6 @@ class Calculator extends LogOperations{
             countDivide: 0,
         };
 
-
-        // this.log = new LogCountersandOperations();
-       
     }
 
     inputNumber (){
@@ -112,10 +109,6 @@ class ScientificCalculator extends LogOperations {
         super();
         
         this.counters = {
-            // countSum: 0,
-            // countSubtract: 0,
-            // countMultiply: 0,
-            // countDivide: 0,
             countExponentiation: 0,
             countRootExtraction: 0,
         };
