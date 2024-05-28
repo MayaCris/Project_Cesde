@@ -13,7 +13,7 @@ import java.time.LocalDate;
 import java.time.Period;
 import java.util.*;
 
-public class producto1 {
+public class CajeroBanco {
 
 
     static Scanner sc = new Scanner(System.in); //Escaner para realizar inputs con el teclado

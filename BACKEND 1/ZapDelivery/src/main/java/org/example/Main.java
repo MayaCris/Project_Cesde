@@ -36,25 +36,42 @@ public class Main {
         //Software de control de versiones
         //Github  es un servidor para guardar codigo
         //Git es el software que se instala en la computadora y crea versiones de los archivos
+//
+//        Integer edad=34;
+//        Vehiculo objeto = new Vehiculo();
+//        Vehiculo objetoDos = new Vehiculo(5,"volvo", LocalDate.now(), 2500.5, "blanco","Volvo 2021", "Automovil", 800.0, 255.0, 100000000);
 
-        Integer edad=34;
-        Vehiculo objeto = new Vehiculo();
-        Vehiculo objetoDos = new Vehiculo(5,"volvo", LocalDate.now(), 2500.5, "blanco","Volvo 2021", "Automovil", 800.0, 255.0, 100000000);
-        
         //Mostrando uno de los atributos del objeto
-        System.out.println("La marca del objeto uno es:" + objeto.marca);
-        System.out.println("La marca del objeto dos es:" + objetoDos.marca); 
+//        System.out.println("La marca del objeto uno es:" + objeto.marca);
+//        System.out.println("La marca del objeto dos es:" + objetoDos.marca);
 
         //Creando un objeto de la clase Prueba. No se importa la clase Prueba porque esta en el mismo paquete
-        Prueba objetoPrueba = new Prueba();
-        Prueba objetoPrueba2 = new Prueba("Toyota");
-        System.out.println("\nLa marca del objeto prueba:" + objetoPrueba.marca);
-        System.out.println("La marca del objeto prueba2:" + objetoPrueba2.marca);
-        
+//        Prueba objetoPrueba = new Prueba();
+//        Prueba objetoPrueba2 = new Prueba("Toyota");
+//        System.out.println("\nLa marca del objeto prueba:" + objetoPrueba.marca);
+//        System.out.println("La marca del objeto prueba2:" + objetoPrueba2.marca);
+
         //Conclusión: Abstracción es la capacidad de representar objetos reales en un programa
         //public es accesible desde cualquier clase, 
-        //protected es accesible desde la misma clase y clases hijas
+        //protected es accesible desde el mismo paquete
         //private es accesible solo desde la misma clase
         //El modificador de acceso por defecto es protected      
+//    }
+        Vehiculo vehiculo1 = new Vehiculo();
+        Vehiculo vehiculo2 = new Vehiculo(1, "Toyota", LocalDate.now(), 1000.0, "Blanco",
+                "Toyota 2021", "Automovil", -800.0, 255.0, 100000000);
+
+        //Metodos de encapsulamiento ==> Getters y Setters
+        //Getters: Obtener el valor de un atributo
+
+        //Llamar setters
+        vehiculo1.setMarca("Nissan");
+        vehiculo1.setAutonomia(-500.0);
+
+        System.out.println("La marca del vehiculo 1 es: " + vehiculo1.getMarca());
+        System.out.println("La autonomia del vehiculo 2 es: " + vehiculo1.getAutonomia());
+
+
+
     }
 }

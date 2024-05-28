@@ -2,31 +2,31 @@ package org.example.modelos;
 
 public class Mercancia {
     //id
-    Integer id;
+    private Integer id;
 
     //volumen
-    Double volumen;
+    private Double volumen;
 
     //tipo
-    String tipo;
+    private String tipo;
 
     //peso
-    Double peso;
+    private Double peso;
 
     //descripcion
-    String descripcion;
+    private String descripcion;
 
     //avaluo
-    Integer avaluo;
+    private Integer avaluo;
 
     //remitente
-    String remitente;
+    private String remitente;
 
     //direccionRemitente
-    String direccionRemitente;
+    private String direccionRemitente;
 
     //direccionDestinatario
-    String direccionDestinatario;
+    private String direccionDestinatario;
 
     public Mercancia() {
     }
@@ -40,6 +40,78 @@ public class Mercancia {
         this.avaluo = avaluo;
         this.remitente = remitente;
         this.direccionRemitente = direccionRemitente;
+        this.direccionDestinatario = direccionDestinatario;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public Double getVolumen() {
+        return volumen;
+    }
+
+    public void setVolumen(Double volumen) {
+        this.volumen = volumen;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public Double getPeso() {
+        return peso;
+    }
+
+    public void setPeso(Double peso) {
+        this.peso = peso;
+    }
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public Integer getAvaluo() {
+        return avaluo;
+    }
+
+    public void setAvaluo(Integer avaluo) {
+        this.avaluo = avaluo;
+    }
+
+    public String getRemitente() {
+        return remitente;
+    }
+
+    public void setRemitente(String remitente) {
+        this.remitente = remitente;
+    }
+
+    public String getDireccionRemitente() {
+        return direccionRemitente;
+    }
+
+    public void setDireccionRemitente(String direccionRemitente) {
+        this.direccionRemitente = direccionRemitente;
+    }
+
+    public String getDireccionDestinatario() {
+        return direccionDestinatario;
+    }
+
+    public void setDireccionDestinatario(String direccionDestinatario) {
         this.direccionDestinatario = direccionDestinatario;
     }
 }
