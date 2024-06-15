@@ -1,0 +1,17 @@
+Tengo dos tipos de eventos
+ - en HTML - con funciones
+ - JS - Escuchador
+
+Eventos en HTML:
+ - Eventos de teclado
+  * Teclas
+ -Eventos del puntero
+  * Click, Doble click, Movimiento del mouse, scroll
+ - Eventos de navegador
+  * Carga de información, maximizar, minimizar
+
+
+  Para extraer el contenido texto de un input, se debe usar el .value
+  Si no es un input, se extrae contenido con textContent
+  Si es un file, se hace diferente.
+  

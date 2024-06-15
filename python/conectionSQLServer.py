@@ -34,7 +34,7 @@ def runMatch():
             data = provideAccess("Rishabh")
             print(data)
         case _:
-            print("You are not a company memeber , \
+            print("You are not a company member , \
             you are not  allowed to access the code !")
 
 
