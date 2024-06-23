@@ -1,36 +1,43 @@
 package org.example.modelos;
 
+import org.example.helpers.validations.VehiculoValidation;
+
 import java.time.LocalDate;
 
 public class Vehiculo {
+    //Inyectando una dependencia de la clase vehiculoValidation
+
+    private final VehiculoValidation vehiculoValidation = new VehiculoValidation();
+
+
     //id
-    private Integer id;
+    private Integer id; //Solo numeros positivos
 
     //marca
-    private String marca;
+    private String marca; // Solo letras y espacios y maximo 50 caracteres sin caracteres especiales
 
     //modelo
-    private LocalDate modelo;
+    private LocalDate modelo; //Con el profe
 
     //kilometraje
-    private Double kilometraje;
+    private Double kilometraje; //Solo numeros positivos y maximo 100.000
 
     //color
-    private String color;
+    private String color; //Solo letras y espacios y maximo 20 caracteres
 
     //descripcion
-    private String descripcion;
+    private String descripcion; // Máximo 100 caracteres
 
     //tipo
-    private String tipo;
+    private String tipo; //Solo letras sin espacios
 
-    private Double autonomia;
+    private Double autonomia; // Solo numeros positivos y máximo 72
 
     //capacidadCarga
-    private Double capacidadCarga;
+    private Double capacidadCarga; //Solo numeros positivos y máximo 1000
 
     //avaluo
-    private Integer avaluo;
+    private Integer avaluo; //Solo numeros positivos
 
     //Constructores de la clase
 
@@ -64,7 +71,13 @@ public class Vehiculo {
     }
 
     public void setMarca(String marca) {
-        this.marca = marca;
+        try {
+            vehiculoValidation.validateMarca(marca);
+            this.marca = marca;
+            System.out.println("Marca validada correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public LocalDate getModelo() {
@@ -80,7 +93,13 @@ public class Vehiculo {
     }
 
     public void setKilometraje(Double kilometraje) {
-        this.kilometraje = kilometraje;
+        try {
+            vehiculoValidation.validateKilometraje(kilometraje);
+            this.kilometraje = kilometraje;
+            System.out.println("Kilometraje validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public String getColor() {
@@ -88,7 +107,13 @@ public class Vehiculo {
     }
 
     public void setColor(String color) {
-        this.color = color;
+        try {
+            vehiculoValidation.validateColor(color);
+            this.color = color;
+            System.out.println("Color validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public String getDescripcion() {
@@ -96,7 +121,13 @@ public class Vehiculo {
     }
 
     public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+        try {
+            vehiculoValidation.validateDescripcion(descripcion);
+            this.descripcion = descripcion;
+            System.out.println("Descripción validada correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public String getTipo() {
@@ -104,7 +135,13 @@ public class Vehiculo {
     }
 
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        try {
+            vehiculoValidation.validateTipo(tipo);
+            this.tipo = tipo;
+            System.out.println("Tipo validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public Double getAutonomia() {
@@ -112,8 +149,13 @@ public class Vehiculo {
     }
 
     public void setAutonomia(Double autonomia) {
-        if (autonomia < 0) throw new IllegalArgumentException("La autonomia no puede ser negativa");
-        this.autonomia = autonomia;
+        try {
+            vehiculoValidation.validateAutonomia(autonomia);
+            this.autonomia = autonomia;
+            System.out.println("Autonomía validada correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public Double getCapacidadCarga() {
@@ -121,7 +163,13 @@ public class Vehiculo {
     }
 
     public void setCapacidadCarga(Double capacidadCarga) {
-        this.capacidadCarga = capacidadCarga;
+        try {
+            vehiculoValidation.validateCapacidadCarga(capacidadCarga);
+            this.capacidadCarga = capacidadCarga;
+            System.out.println("Capacidad de carga validada correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public Integer getAvaluo() {
@@ -129,6 +177,12 @@ public class Vehiculo {
     }
 
     public void setAvaluo(Integer avaluo) {
-        this.avaluo = avaluo;
+        try {
+            vehiculoValidation.validateAvaluo(avaluo);
+            this.avaluo = avaluo;
+            System.out.println("Avalúo validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 }

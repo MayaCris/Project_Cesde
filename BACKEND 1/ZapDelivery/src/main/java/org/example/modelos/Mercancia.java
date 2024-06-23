@@ -2,31 +2,29 @@ package org.example.modelos;
 
 public class Mercancia {
     //id
-    private Integer id;
+    private Integer id; //Solo enteros positivos
 
     //volumen
-    private Double volumen;
+    private Double volumen; //Solo numeros positivos y maximo 100
 
     //tipo
-    private String tipo;
+    private String tipo; //Solo letras sin espacios
 
     //peso
-    private Double peso;
+    private Double peso; //Solo numeros positivos y maximo 1000
 
     //descripcion
-    private String descripcion;
+    private String descripcion; // Máximo 100 caracteres
 
     //avaluo
-    private Integer avaluo;
+    private Integer avaluo; //Solo numeros positivos
 
-    //remitente
-    private String remitente;
 
     //direccionRemitente
-    private String direccionRemitente;
+    private String direccionRemitente; // Máximo 200 caracteres
 
     //direccionDestinatario
-    private String direccionDestinatario;
+    private String direccionDestinatario; // Máximo 200 caracteres
 
     public Mercancia() {
     }
@@ -38,7 +36,7 @@ public class Mercancia {
         this.peso = peso;
         this.descripcion = descripcion;
         this.avaluo = avaluo;
-        this.remitente = remitente;
+//        this.remitente = remitente;
         this.direccionRemitente = direccionRemitente;
         this.direccionDestinatario = direccionDestinatario;
     }
@@ -89,14 +87,6 @@ public class Mercancia {
 
     public void setAvaluo(Integer avaluo) {
         this.avaluo = avaluo;
-    }
-
-    public String getRemitente() {
-        return remitente;
-    }
-
-    public void setRemitente(String remitente) {
-        this.remitente = remitente;
     }
 
     public String getDireccionRemitente() {
