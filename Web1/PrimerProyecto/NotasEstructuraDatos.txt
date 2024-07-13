@@ -35,7 +35,7 @@
 
 //     console.log(estudiante);
 
-//     //Un Objeto tiene prpiedades y comportamientos
+//     //Un Objeto tiene propiedades y comportamientos
 //     //---> Propiedades: Características del objeto
 //         //LLave: valor
 //     //---> Comportamientos: Acciones que puede realizar el objeto

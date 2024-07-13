@@ -27,8 +27,8 @@ public class Patient {
         return this.weight + " Kg.";
     }
 
-    public Double getHeight() {
-        return height;
+    public String getHeight() {
+        return height + " Mts.";
     }
 
     public void setHeight(Double height) {
@@ -72,7 +72,11 @@ public class Patient {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        if (phoneNumber.length() > 8) {
+            System.out.println("El número de teléfono debe ser de 8 dígitos máximo");
+        } else if (phoneNumber.length() == 8) {
+            this.phoneNumber = phoneNumber;
+        }
     }
 
     public String getBirthday() {
