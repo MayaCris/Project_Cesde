@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4ef68ee-c85f-448c-a1a8-a2ab86746e1a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Patient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/PLATZI/MedicalAppointments/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/PLATZI/MedicalAppointments/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/PLATZI/MedicalAppointments/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/PLATZI/MedicalAppointments/Patient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/entregables/producto1$User.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/entregables/CajeroBanco$User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/entregables/producto1.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/entregables/CajeroBanco.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Web1/PrimerProyecto/NotasEstructuraDatos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Web1/PrimerProyecto/NotasEstructuraDatos.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/messages/VehiculoMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/messages/VehiculoMessage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +114,8 @@
       <workItem from="1719671509487" duration="4856000" />
       <workItem from="1719676540888" duration="3222000" />
       <workItem from="1720837512128" duration="42000" />
-      <workItem from="1720837568327" duration="9468000" />
+      <workItem from="1720837568327" duration="9871000" />
+      <workItem from="1720887156417" duration="2067000" />
     </task>
     <servers />
   </component>
