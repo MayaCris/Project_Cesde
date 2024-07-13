@@ -5,19 +5,19 @@ import org.example.helpers.validations.VehiculoValidation;
 import java.time.LocalDate;
 
 public class Vehiculo {
-    //Inyectando una dependencia de la clase vehiculoValidation
 
+    //Inyectando una dependencia de la clase vehiculoValidation
     private final VehiculoValidation vehiculoValidation = new VehiculoValidation();
 
 
     //id
-    private Integer id; //Solo numeros positivos
+    private Integer id; //Solo enteros positivos
 
     //marca
     private String marca; // Solo letras y espacios y maximo 50 caracteres sin caracteres especiales
 
     //modelo
-    private LocalDate modelo; //Con el profe
+    private String modelo; //Con el profe (MM-YY)
 
     //kilometraje
     private Double kilometraje; //Solo numeros positivos y maximo 100.000
@@ -45,7 +45,7 @@ public class Vehiculo {
     public Vehiculo() {
     }
 
-    public Vehiculo(Integer id, String marca, LocalDate modelo, Double kilometraje, String color, String descripcion, String tipo, Double autonomia, Double capacidadCarga, Integer avaluo) {
+    public Vehiculo(Integer id, String marca, String modelo, Double kilometraje, String color, String descripcion, String tipo, Double autonomia, Double capacidadCarga, Integer avaluo) {
         this.id = id;
         this.marca = marca;
         this.modelo = modelo;
@@ -63,7 +63,13 @@ public class Vehiculo {
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        try {
+            vehiculoValidation.validateId(id);
+            this.id = id;
+            System.out.println("Id validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public String getMarca() {
@@ -80,12 +86,18 @@ public class Vehiculo {
         }
     }
 
-    public LocalDate getModelo() {
+    public String getModelo() {
         return modelo;
     }
 
-    public void setModelo(LocalDate modelo) {
-        this.modelo = modelo;
+    public void setModelo(String modelo) {
+        try {
+            vehiculoValidation.validateModelo(modelo);
+            this.modelo = modelo;
+            System.out.println("Modelo validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public Double getKilometraje() {

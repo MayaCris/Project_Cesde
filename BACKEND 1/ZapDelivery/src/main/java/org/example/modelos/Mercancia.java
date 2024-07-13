@@ -1,6 +1,13 @@
 package org.example.modelos;
 
+import org.example.helpers.validations.MercanciaValidation;
+
 public class Mercancia {
+
+    //Inyectando una dependencia de la clase mercanciaValidation
+    private final MercanciaValidation mercanciaValidation = new MercanciaValidation();
+
+
     //id
     private Integer id; //Solo enteros positivos
 
@@ -46,7 +53,13 @@ public class Mercancia {
     }
 
     public void setId(Integer id) {
-        this.id = id;
+        try {
+            mercanciaValidation.validateId(id);
+            this.id = id;
+            System.out.println("Id validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public Double getVolumen() {
@@ -54,7 +67,13 @@ public class Mercancia {
     }
 
     public void setVolumen(Double volumen) {
-        this.volumen = volumen;
+        try {
+            mercanciaValidation.validateVolumen(volumen);
+            this.volumen = volumen;
+            System.out.println("Volumen validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public String getTipo() {
@@ -62,7 +81,13 @@ public class Mercancia {
     }
 
     public void setTipo(String tipo) {
-        this.tipo = tipo;
+        try {
+            mercanciaValidation.validateTipo(tipo);
+            this.tipo = tipo;
+            System.out.println("Tipo validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public Double getPeso() {
@@ -70,7 +95,13 @@ public class Mercancia {
     }
 
     public void setPeso(Double peso) {
-        this.peso = peso;
+        try {
+            mercanciaValidation.validatePeso(peso);
+            this.peso = peso;
+            System.out.println("Peso validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public String getDescripcion() {
@@ -78,7 +109,13 @@ public class Mercancia {
     }
 
     public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+        try {
+            mercanciaValidation.validateDescripcion(descripcion);
+            this.descripcion = descripcion;
+            System.out.println("Descripción validada correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public Integer getAvaluo() {
@@ -86,7 +123,13 @@ public class Mercancia {
     }
 
     public void setAvaluo(Integer avaluo) {
-        this.avaluo = avaluo;
+        try {
+            mercanciaValidation.validateAvaluo(avaluo);
+            this.avaluo = avaluo;
+            System.out.println("Avaluo validado correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public String getDireccionRemitente() {
@@ -94,7 +137,13 @@ public class Mercancia {
     }
 
     public void setDireccionRemitente(String direccionRemitente) {
-        this.direccionRemitente = direccionRemitente;
+        try {
+            mercanciaValidation.validateDireccionRemitente(direccionRemitente);
+            this.direccionRemitente = direccionRemitente;
+            System.out.println("Dirección del remitente validada correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 
     public String getDireccionDestinatario() {
@@ -102,6 +151,12 @@ public class Mercancia {
     }
 
     public void setDireccionDestinatario(String direccionDestinatario) {
-        this.direccionDestinatario = direccionDestinatario;
+        try {
+            mercanciaValidation.validateDireccionDestinatario(direccionDestinatario);
+            this.direccionDestinatario = direccionDestinatario;
+            System.out.println("Dirección del destinatario validada correctamente");
+        } catch (Exception error) {
+            System.out.println(error.getMessage());
+        }
     }
 }

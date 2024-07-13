@@ -1,4 +1,4 @@
-package org.example.helpers.Regex;
+package org.example.helpers.messages;
 
 public enum GeneralRegex {
     VALIDATION_MARCA("^[A-Za-z ]{1,50}$"),
@@ -6,6 +6,7 @@ public enum GeneralRegex {
     VALIDATION_DESCRIPCION(".{1,100}$"),
     VALIDATION_TIPO("^[A-Za-z]{1,}$"),
     VALIDATION_AUTONOMIA("^[0-9]{1,2}$"),
+    VALIDATION_MODELO("^(0[1-9]|1[0-2])[-/](\\d{2})$")
     ;
     private String regex;
 

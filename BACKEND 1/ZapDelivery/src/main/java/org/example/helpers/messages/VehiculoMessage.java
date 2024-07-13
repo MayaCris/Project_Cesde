@@ -4,7 +4,7 @@ public enum VehiculoMessage {
     ID_POSITIVO("El id debe ser un número positivo"),
     ID_NUMERO("El id debe ser un número"),
     MARCA_CARACTERES("La marca solo puede contener letras y espacios y un máximo de 50 caracteres sin caracteres especiales"),
-    MODELO("El modelo debe ser una fecha"),
+    MODELO("El modelo debe tener el formato MM-YY"),
     KILOMETRAJE_POSITIVO("El kilometraje debe ser un número positivo y máximo 100.000"),
     COLOR_CARACTERES("El color solo puede contener letras y espacios y un máximo de 20 caracteres"),
     DESCRIPCION_CARACTERES("La descripción debe tener un máximo de 100 caracteres"),

@@ -5,16 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4ef68ee-c85f-448c-a1a8-a2ab86746e1a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/NotasClase.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/Regex/GeneralRegex.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/generals/RegexValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/messages/VehiculoMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/validations/MercanciaValidation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/validations/VehiculoValidation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/messages/MercanciaMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/modelos/FechasJava.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/Regex/GeneralRegex.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/messages/GeneralRegex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/generals/RegexValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/Regex/RegexValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/messages/VehiculoMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/messages/VehiculoMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/validations/MercanciaValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/validations/MercanciaValidation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/validations/VehiculoValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/validations/VehiculoValidation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/modelos/Mercancia.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/modelos/Mercancia.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/modelos/Vehiculo.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/modelos/Vehiculo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Patient.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/PLATZI/MedicalAppointments/Patient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/PLATZI/MedicalAppointments/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/PLATZI/MedicalAppointments/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/PLATZI/MedicalAppointments/Patient.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/PLATZI/MedicalAppointments/Patient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/entregables/producto1$User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Java/out/production/REPOSITORIO/entregables/producto1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Web1/PrimerProyecto/NotasEstructuraDatos.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Web1/PrimerProyecto/NotasEstructuraDatos.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +32,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,7 +62,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/OneDrive/PERSONAL/A-CESDE/pkumonitor-backend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/OneDrive/PERSONAL/A-CESDE/REPOSITORIO/Java&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -86,8 +94,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.17011.79" />
-        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.17011.79" />
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
       </set>
     </attachedChunks>
   </component>
@@ -115,7 +123,13 @@
       <workItem from="1719080131236" duration="795000" />
       <workItem from="1719081453648" duration="8665000" />
       <workItem from="1719153883158" duration="792000" />
-      <workItem from="1719157559274" duration="7625000" />
+      <workItem from="1719157559274" duration="7944000" />
+      <workItem from="1719277287195" duration="725000" />
+      <workItem from="1719321263526" duration="1236000" />
+      <workItem from="1719671509487" duration="4856000" />
+      <workItem from="1719676540888" duration="3222000" />
+      <workItem from="1720837512128" duration="42000" />
+      <workItem from="1720837568327" duration="9059000" />
     </task>
     <servers />
   </component>

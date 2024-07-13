@@ -1,8 +1,10 @@
 package org.example.helpers.validations;
 
-import org.example.helpers.Regex.GeneralRegex;
-import org.example.helpers.generals.RegexValidator;
+import org.example.helpers.messages.GeneralRegex;
+import org.example.helpers.Regex.RegexValidator;
 import org.example.helpers.messages.VehiculoMessage;
+
+import java.time.LocalDate;
 
 public class VehiculoValidation {
 
@@ -16,14 +18,19 @@ public class VehiculoValidation {
         return true;
     }
 
-    public void validateMarca(String marca) throws Exception {
+    public boolean validateMarca(String marca) throws Exception {
         boolean validation =  regexValidator.validarRegexString(GeneralRegex.VALIDATION_MARCA.getRegex(), marca);
         if (!validation) {
             throw new Exception(VehiculoMessage.MARCA_CARACTERES.getMessageError());
         }
+        return true;
     }
 
-    public boolean validateModelo(String fechaModelo) throws Exception {
+    public boolean validateModelo(String modelo) throws Exception {
+        boolean validation =  regexValidator.validarRegexString(GeneralRegex.VALIDATION_MODELO.getRegex(), modelo);
+        if (!validation) {
+            throw new Exception(VehiculoMessage.MODELO.getMessageError());
+        }
         return true;
     }
 
