@@ -6,7 +6,13 @@
       <list>
         <option value="$PROJECT_DIR$/ZapDelivery/pom.xml" />
         <option value="$PROJECT_DIR$/DragonBall/pom.xml" />
+        <option value="$PROJECT_DIR$/Torneo/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/DragonBall/Torneo/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_22" default="true" project-jdk-name="22" project-jdk-type="JavaSDK">

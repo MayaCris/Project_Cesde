@@ -1,20 +1,20 @@
 package org.example.modelos;
 
-public class Sayayin {
+public abstract class Sayayin {
 
     private String nombre;
     private String familia;
     private int edad;
-    private int poderPele;
+    private int poderPelea;
 
     public Sayayin() {
     }
 
-    public Sayayin(String nombre, String familia, int edad, int poderPele) {
+    public Sayayin(String nombre, String familia, int edad, int poderPelea) {
         this.nombre = nombre;
         this.familia = familia;
         this.edad = edad;
-        this.poderPele = poderPele;
+        this.poderPelea = poderPelea;
     }
 
     public String getNombre() {
@@ -29,8 +29,8 @@ public class Sayayin {
         return edad;
     }
 
-    public int getPoderPele() {
-        return poderPele;
+    public int getPoderPelea() {
+        return poderPelea;
     }
 
     public void setNombre(String nombre) {
@@ -45,12 +45,15 @@ public class Sayayin {
         this.edad = edad;
     }
 
-    public void setPoderPele(int poderPele) {
-        this.poderPele = poderPele;
+    public void setPoderPelea(int poderPelea) {
+        this.poderPelea = poderPelea;
     }
 
     public void saludar(){
         System.out.println("Hola, mi nombre es: " + this.nombre);
     }
+
+    public abstract void pelear();
+
 }
 
