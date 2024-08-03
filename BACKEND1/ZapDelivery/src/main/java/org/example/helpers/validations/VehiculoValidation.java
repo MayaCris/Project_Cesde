@@ -4,8 +4,6 @@ import org.example.helpers.messages.GeneralRegex;
 import org.example.helpers.Regex.RegexValidator;
 import org.example.helpers.messages.VehiculoMessage;
 
-import java.time.LocalDate;
-
 public class VehiculoValidation {
 
     RegexValidator regexValidator = new RegexValidator();

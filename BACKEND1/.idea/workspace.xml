@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b4ef68ee-c85f-448c-a1a8-a2ab86746e1a" name="Changes" comment="" />
+    <list default="true" id="b4ef68ee-c85f-448c-a1a8-a2ab86746e1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/ZapDelivery/src/test/java/org/example/helpers/validations/VehiculoValidationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/HackerRank/ArrayIntegers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Java/LearningJava/Hello.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZapDelivery/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/NotasClase.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/NotasClase.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/validations/VehiculoValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/ZapDelivery/src/main/java/org/example/helpers/validations/VehiculoValidation.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -36,23 +45,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/ASUS/OneDrive/PERSONAL/A-CESDE/REPOSITORIO/BACKEND1",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.VehiculoValidationTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.VehiculoValidationTest.validarIdConNumeroNegativo.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.VehiculoValidationTest.validarIdOperaCorrectamente.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/OneDrive/PERSONAL/A-CESDE/REPOSITORIO/BACKEND1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager">
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.helpers.validations" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.VehiculoValidationTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="ZapDelivery" />
@@ -66,9 +88,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="VehiculoValidationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZapDelivery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.helpers.validations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.helpers.validations" />
+      <option name="MAIN_CLASS_NAME" value="org.example.helpers.validations.VehiculoValidationTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehiculoValidationTest.validarIdConNumeroNegativo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZapDelivery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.helpers.validations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.helpers.validations" />
+      <option name="MAIN_CLASS_NAME" value="org.example.helpers.validations.VehiculoValidationTest" />
+      <option name="METHOD_NAME" value="validarIdConNumeroNegativo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VehiculoValidationTest.validarIdOperaCorrectamente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ZapDelivery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.helpers.validations.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.helpers.validations" />
+      <option name="MAIN_CLASS_NAME" value="org.example.helpers.validations.VehiculoValidationTest" />
+      <option name="METHOD_NAME" value="validarIdOperaCorrectamente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.VehiculoValidationTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.VehiculoValidationTest.validarIdConNumeroNegativo" />
+        <item itemvalue="JUnit.VehiculoValidationTest.validarIdOperaCorrectamente" />
       </list>
     </recent_temporary>
   </component>
@@ -113,6 +185,10 @@
       <workItem from="1720837568327" duration="9871000" />
       <workItem from="1720887156417" duration="2384000" />
       <workItem from="1720889865854" duration="278000" />
+      <workItem from="1721056748132" duration="427000" />
+      <workItem from="1722091154356" duration="1123000" />
+      <workItem from="1722092351799" duration="6482000" />
+      <workItem from="1722709721393" duration="314000" />
     </task>
     <servers />
   </component>
@@ -131,5 +207,13 @@
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/BACKEND1$Main.ic" NAME="Main Coverage Results" MODIFIED="1722098490356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/BACKEND1$VehiculoValidationTest.ic" NAME="VehiculoValidationTest Coverage Results" MODIFIED="1722098549566" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>org.example.helpers.validations.*</FILTER>
+    </SUITE>
   </component>
 </project>

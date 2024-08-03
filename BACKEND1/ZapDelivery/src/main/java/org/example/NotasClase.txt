@@ -69,3 +69,14 @@
 
         return true;
     }
+
+
+
+PRUEBAS UNITARIAS
+Manejar concepto AAA
+
+Arrange (Prepare)
+Act (Apunte y dispare)
+Assert (Verifique)
+
+Mi metodo debe funcionar cuando está ok y cuando tiene falla general
